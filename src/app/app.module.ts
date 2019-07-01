@@ -7,6 +7,9 @@ import { APP_ROUTES} from './app.routes';
 // Módulos
 import { PagesModule } from './pages/pages.module';
 
+// Servicios
+import { SettingsService } from './services/settings.service';
+
 // Componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -28,7 +31,7 @@ import { FormsModule } from '../../node_modules/@angular/forms';
     PagesModule,
     FormsModule
   ],
-  providers: [],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
